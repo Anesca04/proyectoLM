@@ -1,75 +1,17 @@
 /*Autor:Angel Estevanez Casas*/
-/*Fecha:21/12/2022*/
-/*Examen 1ºTrimestre Lenguaje de Marcas.*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*Fecha: 07/05/2023*/
+/*Preparación del proyecto final del 3er trimestre.*/
+
+table {
+    border-collapse: collapse;
 }
-
-body {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+td {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
 }
-
-img {
-    position:absolute;
-    top:0;
-    left:0;    
-    width:100%;
-    height:100%;
-    object-fit: cover;
-    object-position: 60% 10%;
-    transition: all 1.5s ease;
-    -webkit-transition: all 1.5s ease;
-    z-index:0;
-}
-
-div {
-    position:absolute;
-    top:0%;
-    left:0%;
-    width: 100%;
-    height: 100%;
-    opacity:0;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    transition: all 1.5s ease;
-    -webkit-transition: all 1.5s ease;
-    background-color:transparent;
-    z-index:1;
-}
-
-p {
-	text-align:center;
-	transition:all 1.5s ease;
-	-webkit-transition:all 1.5s ease;
-	background-color:transparent;
-	color:skyblue;
-	text-shadow:1px 1px green;
-	font-size:cal(1.2em + 1vw + 1vh);
-	font-weight:bold;
-	z-index:2;
-}
-
-p:nth-child(3) {
-    color:white;
-    font-style:Courier New;
-}
-
-div:active, div:hover {
-    opacity:1;
-    background-color:rgba(255,255,255,0.15);
-    
-}
-
-
-@media all and (orientation:landscape){
-    img, div {
-        width:70vh;
-        margin-left:calc(50vw - 35vh);
-    }
+.hover {
+    background-color: lightblue;
 }
