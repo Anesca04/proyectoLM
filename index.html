@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en" {IF CLASSES}class="classes"{/IF}>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angel Examen</title>
-    <link rel="stylesheet" href="./estilos.css" />
+    <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
+    <table id="board">
+        <tr>
+            <td onmouseenter="hoverCell(this)" onmouseleave="unhoverCell(this)" onclick="makeMove(this)"></td>
+            <td onmouseenter="hoverCell(this)" onmouseleave="unhoverCell(this)" onclick="makeMove(this)"></td>
+            <td onmouseenter="hoverCell(this)" onmouseleave="unhoverCell(this)" onclick="makeMove(this)"></td>
+        </tr>
+        <tr>
+            <td onmouseenter="hoverCell(this)" onmouseleave="unhoverCell(this)" onclick="makeMove(this)"></td>
+            <td onmouseenter="hoverCell(this)" onmouseleave="unhoverCell(this)" onclick="makeMove(this)"></td>
+            <td onmouseenter="hoverCell(this)" onmouseleave="unhoverCell(this)" onclick="makeMove(this)"></td>
+        </tr>
+        <tr>
+            <td onmouseenter="hoverCell(this)" onmouseleave="unhoverCell(this)" onclick="makeMove(this)"></td>
+            <td onmouseenter="hoverCell(this)" onmouseleave="unhoverCell(this)" onclick="makeMove(this)"></td>
+            <td onmouseenter="hoverCell(this)" onmouseleave="unhoverCell(this)" onclick="makeMove(this)"></td>
+        </tr>
+    </table>
 
-    <img src="./futbol.webp" />
+    <button onclick="resetGame()">Reset</button>
 
-    <div>
-        <p>Felices Fiestas te desea ANGEL</p>
-    </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
